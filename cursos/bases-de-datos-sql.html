@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: Bases de Datos y SQL</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="..proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Introducción a las Bases de Datos y SQL</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: ¿Qué es una Base de Datos?</h3>
+            <p>
+                Una **base de datos** es un sistema organizado para almacenar, gestionar y recuperar información de manera eficiente. Piensa en ella como una versión digital y extremadamente poderosa de una hoja de cálculo, capaz de manejar millones de registros y relaciones complejas.
+            </p>
+            <p>
+                Existen diferentes tipos de bases de datos. En este curso nos enfocaremos en las **bases de datos relacionales**, que organizan la información en tablas con filas y columnas, y utilizan **SQL** para comunicarse con ellas.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Fundamentos de SQL</h3>
+            <p>
+                **SQL (Structured Query Language)** es el lenguaje estándar para gestionar bases de datos relacionales. Es un lenguaje declarativo, lo que significa que le dices a la base de datos lo que quieres, en lugar de decirle cómo hacerlo.
+            </p>
+            <p>
+                Aquí tienes los cuatro comandos más importantes, conocidos como **CRUD** (Crear, Leer, Actualizar, Borrar):
+            </p>
+            <pre><code>
+                -- LECTURA (READ): Selecciona datos de una tabla
+                SELECT nombre, email FROM usuarios;
+
+                -- CREACIÓN (CREATE): Inserta un nuevo registro
+                INSERT INTO usuarios (nombre, email) VALUES ('Juan', 'juan@email.com');
+
+                -- ACTUALIZACIÓN (UPDATE): Modifica un registro existente
+                UPDATE usuarios SET email = 'nuevo@email.com' WHERE nombre = 'Juan';
+
+                -- BORRADO (DELETE): Elimina un registro
+                DELETE FROM usuarios WHERE nombre = 'Juan';
+            </code></pre>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Conectando Python a una Base de Datos</h3>
+            <p>
+                Para usar bases de datos en tus aplicaciones de Python, necesitas un conector que permita a tu código comunicarse con la base de datos.
+            </p>
+            <p>
+                Te enseñaremos a usar librerías como `sqlite3` (que viene con Python) para ejecutar consultas SQL directamente desde tu código, lo que te permitirá crear aplicaciones web que almacenan y manipulan datos de forma persistente.
+            </p>
+            <pre><code>
+                import sqlite3
+
+                # Conecta a la base de datos (o la crea si no existe)
+                conexion = sqlite3.connect('mi_base_de_datos.db')
+                cursor = conexion.cursor()
+
+                # Ejecuta un comando SQL
+                cursor.execute('SELECT * FROM usuarios')
+                
+                # Cierra la conexión
+                conexion.close()
+            </code></pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

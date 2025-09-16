@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: Proyecto Web Básico</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Desarrollo de un Proyecto Web Básico</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: Planificación y Estructura del Proyecto</h3>
+            <p>
+                Antes de escribir una línea de código, el primer paso es la **planificación**. Define el objetivo de tu proyecto, su público objetivo y las funcionalidades que tendrá. Para este curso, construiremos una página de inicio simple con un botón interactivo.
+            </p>
+            <p>
+                La estructura de archivos es crucial para la organización. Vamos a crear una estructura de carpetas limpia y profesional en VS Code:
+            </p>
+            <ul>
+                <li>`mi-proyecto/`
+                    <ul>
+                        <li>`index.html` (La página de inicio)</li>
+                        <li>`styles.css` (Para los estilos)</li>
+                        <li>`main.js` (Para la interactividad)</li>
+                        <li>`images/` (Para las imágenes)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Construyendo la Interfaz con HTML y CSS</h3>
+            <p>
+                Usaremos **HTML** para construir el esqueleto de nuestra página. Agregaremos un encabezado, un párrafo y un botón. Usaremos etiquetas semánticas para una buena práctica.
+            </p>
+            <p>
+                Luego, usaremos **CSS** para dar estilo a nuestra página. Le daremos colores, fuentes y un diseño atractivo. También usaremos Flexbox para centrar elementos, demostrando cómo lo aprendido en el curso intermedio es útil en la práctica.
+            </p>
+            <pre><code>
+                .contenedor-principal {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                }
+            </code></pre>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Añadiendo Interactividad con JavaScript</h3>
+            <p>
+                Finalmente, usaremos **JavaScript** para añadir interactividad. Haremos que al hacer clic en un botón, un texto cambie o un elemento aparezca. Conectaremos nuestro archivo `main.js` al `index.html` y escribiremos el código para manipular el **DOM**.
+            </p>
+            <p>
+                **Ejemplo de código en `main.js`:**
+            </p>
+            <pre><code>
+                const boton = document.getElementById('boton');
+                const texto = document.getElementById('texto-oculto');
+                
+                boton.addEventListener('click', () => {
+                    texto.textContent = '¡El texto ha cambiado!';
+                });
+            </code></pre>
+            <p>
+                Este proyecto te mostrará cómo las tres tecnologías (HTML, CSS y JavaScript) trabajan juntas para crear sitios web dinámicos.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

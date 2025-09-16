@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: Introducción a JavaScript</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Introducción a JavaScript</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: ¿Qué es JavaScript?</h3>
+            <p>
+                JavaScript es el lenguaje de programación que le da **interactividad** a las páginas web. Si HTML es el esqueleto y CSS es la piel y la ropa, JavaScript es el **cerebro** que le dice a la página qué hacer. Permite crear efectos dinámicos, validar formularios, mostrar u ocultar elementos y comunicarse con servidores.
+            </p>
+            <p>
+                Es un lenguaje de programación interpretado, lo que significa que el navegador puede leer y ejecutar el código directamente. Esto lo hace muy rápido y eficiente para aplicaciones web.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Variables y Tipos de Datos</h3>
+            <p>
+                Al igual que en otros lenguajes, en JavaScript las **variables** son contenedores para almacenar datos. Puedes declararlas con las palabras clave `var`, `let` o `const`.
+            </p>
+            <pre><code>
+                // Una variable que puede cambiar
+                let nombre = "Juan";
+                nombre = "Pedro";
+                
+                // Una constante, su valor no puede cambiar
+                const PI = 3.1416;
+
+                // Un tipo de dato de texto
+                let saludo = "Hola, mundo";
+                // Un tipo de dato numérico
+                let edad = 30;
+                // Un tipo de dato booleano
+                let esActivo = true;
+            </code></pre>
+            <p>
+                Aunque JavaScript es flexible con los tipos de datos, entender si estás trabajando con texto, números o valores lógicos es fundamental para evitar errores.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Manipulación del DOM</h3>
+            <p>
+                El **DOM (Document Object Model)** es una representación de la estructura de tu página web. JavaScript puede acceder a este modelo y manipularlo para cambiar el contenido, los estilos o la estructura de tu página. Es lo que permite, por ejemplo, que al hacer clic en un botón, aparezca un texto.
+            </p>
+            <p>
+                Puedes seleccionar elementos HTML usando métodos como `getElementById()`, `querySelector()`, o `getElementsByClassName()`. Una vez que tienes el elemento, puedes cambiar su contenido o sus estilos.
+            </p>
+            <pre><code>
+                // Selecciona el elemento por su ID
+                let titulo = document.getElementById("miTitulo");
+                
+                // Cambia el texto del elemento
+                titulo.textContent = "Nuevo Título";
+                
+                // Cambia el color del texto
+                titulo.style.color = "red";
+            </code></pre>
+            <p>
+                La **manipulación del DOM** es el corazón de la interactividad en la web.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

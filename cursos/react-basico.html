@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: React Básico</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Desarrollo Front-end con React</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: ¿Qué es un Framework Front-end?</h3>
+            <p>
+                A diferencia de las páginas web tradicionales que recargan toda la página con cada clic, los frameworks modernos como **React** se usan para crear **aplicaciones de una sola página (SPA)**. En una SPA, el contenido cambia de forma dinámica sin necesidad de recargar la página, lo que proporciona una experiencia de usuario fluida y rápida. React se enfoca en la interfaz de usuario, permitiéndote construir aplicaciones con componentes reutilizables.
+            </p>
+            <p>
+                **React** es una librería de JavaScript de código abierto, desarrollada por Facebook, que se ha convertido en el estándar de la industria para el desarrollo de interfaces de usuario interactivas.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Componentes, JSX y Props</h3>
+            <p>
+                El corazón de React son los **componentes**. Un componente es una pieza de código independiente y reutilizable que representa una parte de la interfaz de usuario. Piensa en ellos como bloques de Lego que puedes combinar para construir una página.
+            </p>
+            <p>
+                **JSX** es una extensión de JavaScript que te permite escribir HTML directamente en tu código JavaScript. No es HTML puro, pero es muy similar y facilita la creación de componentes.
+            </p>
+            <p>
+                Las **Props** son la forma en que los datos se pasan de un componente padre a un componente hijo. Son como los "argumentos" o "propiedades" que le das a un componente para que sepa cómo debe renderizarse.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Estado (State) y Manejo de Eventos</h3>
+            <p>
+                El **Estado (State)** es una característica que permite que un componente tenga memoria y pueda cambiar su contenido a lo largo del tiempo. Por ejemplo, en un contador, el número actual es el estado. Cuando el usuario hace clic en un botón, el estado cambia y React actualiza la interfaz automáticamente.
+            </p>
+            <p>
+                El **Manejo de Eventos** te permite responder a las interacciones del usuario, como clics en botones o entradas de texto. Esto es lo que hace que tu aplicación sea verdaderamente interactiva y dinámica.
+            </p>
+            <pre><code>
+                import React, { useState } from 'react';
+
+                function Contador() {
+                    const [conteo, setConteo] = useState(0);
+
+                    return (
+                        &lt;div&gt;
+                            &lt;p&gt;El conteo es: {conteo}&lt;/p&gt;
+                            &lt;button onClick={() => setConteo(conteo + 1)}&gt;
+                                Incrementar
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    );
+                }
+            </code></pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

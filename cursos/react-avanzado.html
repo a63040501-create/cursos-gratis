@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: React Avanzado</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Estado Avanzado y Enrutamiento en React</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: Gestión de Estado en Aplicaciones Grandes</h3>
+            <p>
+                En aplicaciones pequeñas, el estado local de un componente es suficiente. Sin embargo, en aplicaciones grandes, muchos componentes necesitan acceder a la misma información, y pasarla de un componente a otro (props drilling) se vuelve inmanejable. Para resolver esto, usamos un **gestor de estado global**.
+            </p>
+            <p>
+                Un gestor de estado global es como un cerebro centralizado para tu aplicación. Librerías como **Redux** o **Zustand** te permiten almacenar datos en un solo lugar al que cualquier componente puede acceder, sin importar dónde se encuentre en la jerarquía de la aplicación.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Enrutamiento del Lado del Cliente</h3>
+            <p>
+                Las aplicaciones de una sola página (SPA) no tienen un sistema de navegación tradicional. Para simular el comportamiento de múltiples páginas, usamos librerías de enrutamiento como **React Router**. El enrutador se encarga de cambiar la interfaz de usuario en función de la URL, pero sin recargar la página.
+            </p>
+            <p>
+                Con **React Router**, puedes definir diferentes rutas (por ejemplo, `/about` o `/dashboard`) y asociarlas con un componente específico. Esto le da a tu aplicación la apariencia y la sensación de un sitio web de varias páginas, pero con la velocidad de una SPA.
+            </p>
+            <pre><code>
+                import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+                import Home from './Home';
+                import About from './About';
+
+                function App() {
+                    return (
+                        &lt;Router&gt;
+                            &lt;Routes&gt;
+                                &lt;Route path="/" element={&lt;Home /&gt;} /&gt;
+                                &lt;Route path="/about" element={&lt;About /&gt;} /&gt;
+                            &lt;/Routes&gt;
+                        &lt;/Router&gt;
+                    );
+                }
+            </code></pre>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Optimizando el Rendimiento de tu Aplicación</h3>
+            <p>
+                A medida que una aplicación crece, el rendimiento se vuelve crucial. Te enseñaremos a usar herramientas de React para evitar renderizados innecesarios, lo que hace que tu aplicación sea más rápida y fluida para los usuarios.
+            </p>
+            <p>
+                Hooks como `useMemo` y `useCallback` son esenciales para optimizar el rendimiento. Permiten "memorizar" el resultado de una función o el valor de una variable para que no se recalculen cada vez que se renderiza el componente, ahorrando tiempo de procesamiento.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

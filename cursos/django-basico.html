@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: Django Básico</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Desarrollo Web con Django</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: ¿Qué es Django?</h3>
+            <p>
+                **Django** es un *framework* web de alto nivel de Python que promueve el desarrollo rápido y un diseño limpio y pragmático. A diferencia de Flask, que es minimalista, Django viene con todo lo que necesitas para construir una aplicación web completa: un ORM para bases de datos, un sistema de autenticación de usuarios y un panel de administración. Se le conoce como un *framework* "de baterías incluidas".
+            </p>
+            <p>
+                El lema de Django es "El *framework* para perfeccionistas con plazos de entrega". Es ideal para construir sitios web complejos como redes sociales, tiendas en línea o plataformas de blogs.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: El Modelo MTV (Model, Template, View)</h3>
+            <p>
+                Django se basa en el patrón de diseño **MTV (Modelo, Plantilla, Vista)**. Es similar a otros patrones populares como MVC.
+            </p>
+            <ul>
+                <li>**Modelo (Model):** Define la estructura de tus datos y se comunica con la base de datos. Si quieres almacenar un usuario, el modelo de usuario define sus campos (nombre, correo, contraseña).</li>
+                <li>**Plantilla (Template):** Es el archivo HTML que muestra la información al usuario. Es la capa de presentación.</li>
+                <li>**Vista (View):** Es la "lógica de negocio". Recibe una solicitud, interactúa con el modelo (si es necesario) y renderiza la plantilla. Es el puente entre el modelo y la plantilla.</li>
+            </ul>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Creando una Aplicación de Blog</h3>
+            <p>
+                Un proyecto común para aprender Django es una aplicación de blog. Los pasos básicos para crearla son:
+            </p>
+            <ol>
+                <li>Crear un proyecto y una aplicación.</li>
+                <li>Definir un modelo de `Post` con campos como título, autor y contenido.</li>
+                <li>Configurar las URLs para que los usuarios puedan ver la lista de posts y un post individual.</li>
+                <li>Crear las vistas que obtienen los datos del modelo.</li>
+                <li>Crear las plantillas HTML para mostrar los posts.</li>
+            </ol>
+            <p>
+                Django se encargará automáticamente de la conexión con la base de datos y de la gestión de usuarios, permitiéndote enfocarte en la funcionalidad de tu blog.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: Git y GitHub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Git y GitHub para Principiantes</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: ¿Qué es el Control de Versiones?</h3>
+            <p>
+                El **control de versiones** es un sistema que registra los cambios en un archivo o conjunto de archivos a lo largo del tiempo. Piensa en él como una "máquina del tiempo" para tu código. Con el control de versiones, puedes volver a versiones anteriores, ver quién hizo un cambio, y deshacer errores fácilmente. El sistema de control de versiones más popular es **Git**.
+            </p>
+            <p>
+                **Git** se ejecuta localmente en tu computadora, mientras que **GitHub** es una plataforma en la nube donde puedes subir tus proyectos para compartir, colaborar y hacer un respaldo de tu trabajo.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Conceptos y Comandos Básicos de Git</h3>
+            <p>
+                Para usar Git, necesitas familiarizarte con algunos conceptos clave:
+            </p>
+            <ul>
+                <li>**Repositorio (Repo)**: Es la carpeta donde Git rastrea todos los cambios.</li>
+                <li>**Commit**: Es una "instantánea" de tu código en un momento dado. Es como guardar un punto de control.</li>
+                <li>**Branch (Rama)**: Es una versión de tu proyecto que te permite trabajar en nuevas funcionalidades sin afectar la versión principal.</li>
+            </ul>
+            <p>
+                Puedes usar Git desde la terminal de VS Code. Aquí están los comandos más comunes:
+            </p>
+            <pre><code>
+                # Inicializa un nuevo repositorio en tu carpeta
+                git init
+
+                # Agrega los cambios para el próximo commit
+                git add .
+
+                # Crea un commit con un mensaje descriptivo
+                git commit -m "Mi primer commit"
+            </code></pre>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Conectando con GitHub</h3>
+            <p>
+                GitHub es la plataforma perfecta para almacenar tus proyectos. Para conectar tu repositorio local a GitHub, necesitas crear un nuevo repositorio en la página de GitHub y luego usar el siguiente comando para enlazarlo y subir tus cambios.
+            </p>
+            <pre><code>
+                # Enlaza tu repositorio local con uno de GitHub
+                git remote add origin https://github.com/tu_usuario/tu_repo.git
+
+                # Sube tus cambios a GitHub (la rama principal)
+                git push -u origin main
+            </code></pre>
+            <p>
+                Aprender a usar Git y GitHub no solo te ayudará a organizar tu trabajo, sino que también es una habilidad fundamental que buscan todas las empresas de tecnología.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

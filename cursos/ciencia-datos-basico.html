@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: Ciencia de Datos con Python</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Introducción a la Ciencia de Datos con Python</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: ¿Qué es la Ciencia de Datos?</h3>
+            <p>
+                La **Ciencia de Datos** es la disciplina que se encarga de extraer conocimiento y valor de los datos. No se trata solo de números, sino de encontrar patrones, tendencias y "historias" que nos ayuden a tomar mejores decisiones. Utiliza una combinación de programación, matemáticas y conocimiento del negocio.
+            </p>
+            <p>
+                Un científico de datos, por ejemplo, podría analizar datos de ventas para predecir qué productos serán los más populares el próximo trimestre.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Análisis de Datos con Pandas</h3>
+            <p>
+                **Pandas** es la librería más utilizada en Python para la manipulación y el análisis de datos. Utiliza una estructura de datos llamada DataFrame, que es similar a una hoja de cálculo, lo que la hace muy intuitiva para trabajar.
+            </p>
+            <p>
+                Verás cómo usar Pandas para cargar datos de archivos CSV, limpiar información desordenada, filtrar datos y calcular estadísticas.
+            </p>
+            <pre><code>
+                import pandas as pd
+
+                # Carga un archivo CSV en un DataFrame
+                df = pd.read_csv('ventas.csv')
+
+                # Muestra las primeras 5 filas
+                print(df.head())
+
+                # Calcula el promedio de la columna 'precios'
+                print(df['precios'].mean())
+            </code></pre>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Aprendizaje Automático Básico</h3>
+            <p>
+                El **Aprendizaje Automático (Machine Learning)** es una rama de la inteligencia artificial que permite a las computadoras aprender a partir de los datos sin ser programadas explícitamente.
+            </p>
+            <p>
+                Usaremos la librería **Scikit-learn** para construir un modelo simple. Por ejemplo, podríamos crear un modelo de regresión lineal que prediga el precio de una casa basándose en su tamaño y ubicación. Este es el primer paso para crear sistemas inteligentes.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

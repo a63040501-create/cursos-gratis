@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: Testing Automatizado</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Introducción al Testing Automatizado</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: ¿Por qué es Crucial el Testing?</h3>
+            <p>
+                El **testing de software** es el proceso de evaluar y verificar que un producto o aplicación haga lo que se espera y que no contenga errores. En lugar de probar una y otra vez de forma manual, el **testing automatizado** usa código para probar tu código. Esto es más rápido, más confiable y te da la confianza de que tus cambios no romperán funcionalidades existentes.
+            </p>
+            <p>
+                El testing no es solo para encontrar errores, sino para **prevenirlos**. Un código bien probado es más fácil de mantener, refactorizar y expandir.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Tipos de Pruebas Esenciales</h3>
+            <p>
+                No todas las pruebas son iguales. Se dividen en diferentes tipos para cubrir distintos aspectos de tu aplicación.
+            </p>
+            <ul>
+                <li>**Pruebas Unitarias**: Prueban las unidades más pequeñas de código, como una función o un método, de forma aislada. Son rápidas y te aseguran que cada parte de tu código funciona correctamente.</li>
+                <li>**Pruebas de Integración**: Prueban cómo diferentes partes de tu código (por ejemplo, dos funciones o un servicio y una base de datos) interactúan entre sí.</li>
+                <li>**Pruebas End-to-End (E2E)**: Simulan el comportamiento de un usuario real, navegando por toda la aplicación desde el principio hasta el final.</li>
+            </ul>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Escribiendo tu Primer Test</h3>
+            <p>
+                La mayoría de los lenguajes de programación tienen librerías de testing integradas. Por ejemplo, en Python, puedes usar la librería `unittest`. Aquí tienes un ejemplo simple de cómo probar una función de suma.
+            </p>
+            <pre><code>
+                # Código que queremos probar
+                def suma(a, b):
+                    return a + b
+
+                # Código de la prueba en Python
+                import unittest
+
+                class TestSuma(unittest.TestCase):
+                    def test_suma_numeros_enteros(self):
+                        self.assertEqual(suma(2, 3), 5)
+
+                if __name__ == '__main__':
+                    unittest.main()
+            </code></pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

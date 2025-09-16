@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: React Native</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Desarrollo de Apps con React Native</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: ¿Qué es React Native?</h3>
+            <p>
+                <strong>React Native</strong> es un <em>framework</em> de JavaScript que te permite construir aplicaciones móviles nativas usando los mismos principios de React. A diferencia del desarrollo web, donde el código se ejecuta en un navegador, una app de React Native se compila en código nativo de iOS y Android. Esto significa que la app tiene el rendimiento y la apariencia de una aplicación nativa.
+            </p>
+            <p>
+                La principal ventaja es la filosofía de "escribe una vez, ejecuta en cualquier lugar", lo que te permite usar una base de código para dos plataformas móviles.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Componentes Nativos y Estilos</h3>
+            <p>
+                En lugar de usar etiquetas HTML como <code>&lt;div&gt;</code> y <code>&lt;p&gt;</code>, React Native usa componentes nativos que se traducen en elementos de la interfaz de usuario de iOS o Android. Por ejemplo, en lugar de <code>&lt;div&gt;</code>, usas el componente <code>&lt;View&gt;</code>, y en lugar de <code>&lt;p&gt;</code>, usas <code>&lt;Text&gt;</code>.
+            </p>
+            <p>
+                El estilo en React Native se hace con JavaScript, usando una sintaxis similar a CSS, pero sin los selectores de cascada. Esto te da un control preciso sobre cómo se ve cada componente.
+            </p>
+            <pre><code>
+                import { Text, View, StyleSheet } from 'react-native';
+
+                const styles = StyleSheet.create({
+                    container: {
+                        flex: 1,
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                    },
+                    texto: {
+                        fontSize: 20,
+                        color: 'blue',
+                    }
+                });
+            </code></pre>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Navegación y Acceso al Dispositivo</h3>
+            <p>
+                Aprenderás a usar librerías como <strong>React Navigation</strong> para manejar la navegación entre pantallas. También verás cómo acceder a las funcionalidades del dispositivo, como la cámara, el GPS o los sensores, usando librerías especializadas que simplifican el proceso.
+            </p>
+            <p>
+                Estas habilidades son esenciales para crear aplicaciones móviles completas que se sienten y funcionan como apps nativas.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: Flask Básico</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Introducción a los Frameworks Web con Flask</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: ¿Qué es un *Framework* Web?</h3>
+            <p>
+                En los cursos anteriores, aprendiste a crear páginas web estáticas con HTML y CSS. Un **framework web** es un conjunto de herramientas y librerías que te permiten crear sitios web dinámicos. Un *framework* se encarga de las tareas repetitivas, como el manejo de las URL o el acceso a bases de datos, para que tú te enfoques en la lógica de tu aplicación.
+            </p>
+            <p>
+                **Flask** es un *micro-framework* de Python. Su principal ventaja es que es ligero y fácil de entender, lo que lo hace perfecto para tu primer acercamiento al desarrollo web con un lenguaje de *backend*.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Creando tu Primera Aplicación Flask</h3>
+            <p>
+                Para empezar a usar Flask, primero necesitas instalarlo en tu entorno de Python. Puedes hacerlo usando el siguiente comando en la terminal:
+            </p>
+            <pre><code>
+                pip install Flask
+            </code></pre>
+            <p>
+                Una vez instalado, puedes crear una aplicación web muy simple con solo unas pocas líneas de código.
+            </p>
+            <pre><code>
+                from flask import Flask
+
+                app = Flask(__name__)
+
+                @app.route('/')
+                def inicio():
+                    return "¡Hola, mundo desde Flask!"
+
+                if __name__ == '__main__':
+                    app.run(debug=True)
+            </code></pre>
+            <p>
+                Aquí, la línea `@app.route('/')` le dice a Flask que cuando el usuario visite la página principal (`/`), debe ejecutar la función `inicio()` y mostrar el mensaje.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: HTML Dinámico con Plantillas</h3>
+            <p>
+                Una de las mayores ventajas de Flask es que te permite servir archivos HTML y llenarlos con información dinámica. Esto se logra usando **plantillas**. Flask usa el motor de plantillas **Jinja**, que te permite incrustar código de Python directamente en tu HTML.
+            </p>
+            <p>
+                Para usar plantillas, debes crear una carpeta llamada `templates/` en el mismo nivel que tu archivo de Python.
+            </p>
+            <pre><code>
+                # Código de Python
+                from flask import Flask, render_template
+
+                app = Flask(__name__)
+
+                @app.route('/')
+                def inicio():
+                    nombre = "Juan"
+                    return render_template('index.html', nombre=nombre)
+            </code></pre>
+            <pre><code>
+                &lt;!-- Código de la plantilla index.html --&gt;
+                &lt;h1&gt;Hola, {{ nombre }}&lt;/h1&gt;
+            </code></pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: APIs RESTful</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Introducción a las APIs RESTful</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: ¿Qué es una API?</h3>
+            <p>
+                Una **API (Interfaz de Programación de Aplicaciones)** es un conjunto de reglas que permite que dos aplicaciones de software se comuniquen entre sí. Piensa en una API como un "camarero" en un restaurante. El cliente (el **frontend**) hace un pedido (una **solicitud**) al camarero (la **API**), quien se lo entrega a la cocina (el **backend**). La cocina prepara el plato y se lo da al camarero, que lo entrega al cliente (la **respuesta**).
+            </p>
+            <p>
+                Las APIs son la base de la mayoría de los servicios web que usas a diario, desde Google Maps hasta las redes sociales.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Conceptos de las APIs RESTful</h3>
+            <p>
+                **REST (Representational State Transfer)** es un estilo de arquitectura para el diseño de APIs. Una API RESTful usa el protocolo HTTP y se basa en recursos (como `/usuarios` o `/productos`). Los datos se envían comúnmente en formato **JSON**, un formato ligero y fácil de leer.
+            </p>
+            <p>
+                Las APIs RESTful usan los métodos estándar de HTTP para indicar qué acción realizar:
+            </p>
+            <ul>
+                <li>`GET`: Para obtener (leer) un recurso.</li>
+                <li>`POST`: Para crear un nuevo recurso.</li>
+                <li>`PUT` / `PATCH`: Para actualizar un recurso.</li>
+                <li>`DELETE`: Para eliminar un recurso.</li>
+            </ul>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Conectando el Frontend con el Backend</h3>
+            <p>
+                Para usar una API en el lado del cliente (en JavaScript o React), necesitas una forma de hacer solicitudes HTTP. En JavaScript, la API `fetch` es la herramienta más común para esto.
+            </p>
+            <p>
+                Una vez que el **backend** expone una URL de API, el **frontend** puede hacer una solicitud para obtener datos.
+            </p>
+            <pre><code>
+                // Ejemplo de una solicitud GET en JavaScript
+                fetch('https://api.ejemplo.com/productos')
+                    .then(response => response.json())
+                    .then(data => console.log(data))
+                    .catch(error => console.error('Error:', error));
+            </code></pre>
+            <p>
+                Este proceso es la clave para crear aplicaciones web de pila completa (full-stack).
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

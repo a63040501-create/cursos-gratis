@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: Python Intermedio (POO)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: Python Intermedio (POO)</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: ¿Qué es la Programación Orientada a Objetos?</h3>
+            <p>
+                La **Programación Orientada a Objetos (POO)** es un paradigma de programación que organiza el código alrededor de "objetos" en lugar de "acciones" o lógica. Piensa en la POO como una forma de modelar el mundo real en tu código. Por ejemplo, en el mundo real, un "coche" tiene características (color, marca) y puede realizar acciones (arrancar, frenar). La POO nos permite representar esas mismas características y acciones en nuestro código.
+            </p>
+            <p>
+                El objetivo principal de la POO es hacer el código más fácil de entender, reutilizar y mantener, especialmente en proyectos grandes.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Clases y Objetos</h3>
+            <p>
+                En la POO, una **clase** es la plantilla o el plano para crear objetos. Una clase define las características (llamadas **atributos**) y las acciones (llamadas **métodos**) que todos los objetos de ese tipo tendrán. Un **objeto** es una instancia de una clase.
+            </p>
+            <p>
+                **Ejemplo:**
+            </p>
+            <pre><code>
+                # Esto es la CLASE 'Coche', el plano
+                class Coche:
+                    def __init__(self, marca, color):
+                        self.marca = marca
+                        self.color = color
+                    
+                    def arrancar(self):
+                        print("El coche ha arrancado.")
+                
+                # Estos son OBJETOS, instancias de la clase 'Coche'
+                mi_coche = Coche("Toyota", "rojo")
+                tu_coche = Coche("Ford", "azul")
+
+                print(mi_coche.marca) # Salida: Toyota
+                tu_coche.arrancar()    # Salida: El coche ha arrancado.
+            </code></pre>
+            <p>
+                La función `__init__` es un método especial llamado constructor, que se ejecuta al crear un nuevo objeto y se usa para inicializar sus atributos.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Pilares de la POO - Herencia</h3>
+            <p>
+                La **herencia** es uno de los pilares de la POO. Permite que una clase (clase "hija") herede atributos y métodos de otra clase (clase "padre"). Esto promueve la reutilización de código y la creación de jerarquías lógicas.
+            </p>
+            <p>
+                **Ejemplo:**
+            </p>
+            <pre><code>
+                # Clase padre
+                class Vehiculo:
+                    def __init__(self, tipo):
+                        self.tipo = tipo
+
+                # Clase hija que hereda de Vehiculo
+                class Coche(Vehiculo):
+                    def __init__(self, marca, color):
+                        super().__init__("coche") # Llama al constructor de la clase padre
+                        self.marca = marca
+                        self.color = color
+                    
+                    def arrancar(self):
+                        print("El coche ha arrancado.")
+
+                mi_coche = Coche("Nissan", "negro")
+                print(mi_coche.tipo) # Salida: coche
+            </code></pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

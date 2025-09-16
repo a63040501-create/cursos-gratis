@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: HTML y CSS Intermedio</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: HTML y CSS Intermedio</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: El porqué de Flexbox y Grid</h3>
+            <p>
+                En el diseño web moderno, necesitamos herramientas que nos permitan crear diseños complejos y que se adapten a diferentes tamaños de pantalla (diseño responsivo). Anteriormente, los diseñadores web usaban trucos complejos con floats, pero hoy en día contamos con dos herramientas poderosas: **Flexbox** y **CSS Grid**. Estas herramientas son nativas del navegador y resuelven los problemas de diseño de forma mucho más eficiente.
+            </p>
+            <ul>
+                <li>**Flexbox** es ideal para alinear elementos en una **sola dimensión** (una fila o una columna). Útil para barras de navegación, tarjetas, etc.</li>
+                <li>**CSS Grid** es ideal para crear diseños en **dos dimensiones** (filas y columnas) al mismo tiempo, como el diseño de una revista o un tablero.</li>
+            </ul>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: Fundamentos de Flexbox</h3>
+            <p>
+                Para usar Flexbox, debes crear un **contenedor padre** (flex container) y sus **elementos hijos** (flex items). El contenedor padre es el que tiene la propiedad `display: flex`. A partir de ahí, puedes alinear los elementos, justificar el espacio entre ellos y controlar su orden.
+            </p>
+            <p>
+                **Propiedades Clave del Contenedor Flexbox:**
+            </p>
+            <ul>
+                <li>`display: flex;` - Define el contenedor como un flexbox.</li>
+                <li>`flex-direction:` - Establece la dirección de los elementos (fila o columna).</li>
+                <li>`justify-content:` - Alinea los elementos a lo largo del eje principal (horizontal).</li>
+                <li>`align-items:` - Alinea los elementos a lo largo del eje secundario (vertical).</li>
+            </ul>
+            <pre><code>
+                .contenedor {
+                    display: flex;
+                    justify-content: center; /* Centra los elementos horizontalmente */
+                }
+            </code></pre>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 3: Fundamentos de CSS Grid</h3>
+            <p>
+                CSS Grid te permite crear un diseño de cuadrícula en dos dimensiones. Puedes dividir tu página en filas y columnas y colocar los elementos en celdas específicas, lo que te da un control total sobre el diseño de la página.
+            </p>
+            <p>
+                **Propiedades Clave del Contenedor Grid:**
+            </p>
+            <ul>
+                <li>`display: grid;` - Define el contenedor como una cuadrícula.</li>
+                <li>`grid-template-columns:` - Define el número y el ancho de las columnas.</li>
+                <li>`grid-template-rows:` - Define el número y la altura de las filas.</li>
+                <li>`grid-gap:` - Crea un espacio entre las filas y las columnas.</li>
+            </ul>
+            <pre><code>
+                .contenedor {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual tamaño */
+                    grid-gap: 20px;
+                }
+            </code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

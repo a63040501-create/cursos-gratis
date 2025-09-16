@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección: HTML y CSS Básico</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprende a Programar con VS Code</h1>
+        <p>Cursos gratuitos y recursos para tu camino en la programación.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../cursos.html">Cursos</a></li>
+            <li><a href="../proyectos.html">Proyectos</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="retroceso">
+            <a href="../cursos.html">← Volver a Cursos</a>
+        </div>
+
+        <h2>Curso: HTML y CSS Básico</h2>
+        
+        <section class="leccion">
+            <h3>Lección 1: HTML, la Estructura y la Semántica</h3>
+            <p>
+                HTML (HyperText Markup Language) es el **lenguaje de marcado** que le da estructura a una página web. Piensa en HTML como los cimientos de una casa. Sus "ladrillos" son las **etiquetas** (`<h1>`, `<p>`, `<img>`), que envuelven el contenido para darle un significado.
+            </p>
+            <p>
+                El **HTML semántico** es un concepto fundamental. Consiste en usar las etiquetas de la forma correcta para que el contenido tenga un significado claro. Por ejemplo, en lugar de usar una etiqueta `<div>` para todo, usamos etiquetas que describen su propósito, como `<header>`, `<nav>`, `<main>`, y `<footer>`. Esto es crucial para la **accesibilidad** y los motores de búsqueda.
+            </p>
+        </section>
+
+        <section class="leccion">
+            <h3>Lección 2: CSS, el Estilo y el Modelo de Caja</h3>
+            <p>
+                Si HTML es la estructura, **CSS (Cascading Style Sheets)** es el estilo, el diseño y los colores. CSS le dice al navegador cómo debe verse el contenido de HTML, permitiéndote cambiar fuentes, colores, y la posición de los elementos.
+            </p>
+            <p>
+                El **Modelo de Caja (Box Model)** es un concepto central en CSS. Cada elemento HTML es una caja, y CSS te permite controlar sus propiedades:
+            </p>
+            <ul>
+                <li>**Contenido**: El espacio para el texto o la imagen.</li>
+                <li>**Padding**: El "relleno", el espacio interno entre el contenido y el borde.</li>
+                <li>**Border**: La línea que rodea la caja.</li>
+                <li>**Margin**: El "margen" externo, que crea espacio entre cajas.</li>
+            </ul>
+            <p>
+                Puedes seleccionar elementos para darles estilo usando **selectores**, que apuntan a etiquetas (`p`), clases (`.clase`) o IDs (`#id`).
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Cursos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
